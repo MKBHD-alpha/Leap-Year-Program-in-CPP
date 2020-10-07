@@ -1,10 +1,12 @@
 //.....................................Without Nested If..............................................
 
 #include <iostream>
+#include<stdio>
+#include<stdlib>
 using namespace std;
-
+int x;
 int main()
-{	
+{	a:
 	int year{};
 	cout<<"Enter The Year"<<endl;
 	cin>>year;
@@ -16,6 +18,20 @@ int main()
 	else{
 		cout<<"The Entered Year is Not a Leap Year"<<endl;
 	}
+	cout<<"do you want to continue or not";
+	cout<<"1 for yes, 2 for no ";
+	cin>>x;
+	switch(x)
+	{ case 1:goto a
+		break;
+	 case 2:exit()
+			
+	}
+	
+	
+	
+	
+	
 	return 0;
 }
 
